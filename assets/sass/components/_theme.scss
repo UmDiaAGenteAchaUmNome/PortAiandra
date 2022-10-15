@@ -1,0 +1,23 @@
+/*---------- Theme Dark -----------*/
+body.dark-theme {
+    --color-body: #222222;
+    --color-dark: #ffffff;
+    --color-text: #999999;
+    --color-text-alt: #555555;
+    --outer-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme {
+    .scroll-header {
+        box-shadow: 0 1px 4px hsla(0, 0%, 4%, 0.3);
+    }
+
+    .change-theme,
+    .nav-toggle i {
+        color: var(--color-dark);
+    }
+
+    &::-webkit-scrollbar {
+        background: hsl(0, 0%, 30%);
+    }
+}

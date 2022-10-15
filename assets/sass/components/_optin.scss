@@ -1,0 +1,32 @@
+/**------------ Optin ------------**/
+.optin .content {
+    text-align: center;
+}
+
+.optin-item {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    img {
+        width: 350px;
+        margin-bottom: 35px;
+    }
+}
+
+.optin-text {
+    h3 {
+        margin-bottom: 1rem;
+        font-size: var(--font-h1);
+        color: var(--color-dark);
+        font-weight: 600;
+    }
+
+    p {
+        color: var(--color-text);
+    }
+
+    a {
+        margin-top: 1.5rem;
+    }
+}

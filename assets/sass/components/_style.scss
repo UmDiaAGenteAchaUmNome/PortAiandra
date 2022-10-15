@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--font-normal);
+    font-family: var(--font-main);
+    background-color: var(--color-body);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+button,
+input,
+textarea {
+    outline: none !important;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.spad {
+    padding: 5rem 0;
+}
+
+/**---------- Title ----------**/
+.section-title {
+    padding: 0 1rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 3.75rem;
+
+    h4 {
+        font-size: var(--font-normal);
+        color: var(--color-main);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: var(--font-h2);
+        color: var(--color-dark);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
+/**---------- Button ----------**/
+.btn {
+    padding: 18px 43px;
+    text-transform: capitalize;
+    border-radius: 0 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    background-size: 200%;
+    transition: 0.6s;
+    box-shadow: 0 7px 21px 0 #f5181866;
+    background-image: linear-gradient(270deg, #f27121, #dd1818, #f27121);
+    background-position: 100%;
+
+    &:hover {
+        background-position: 0;
+        color: #fff;
+    }
+}
+
+.btn-link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--color-main);
+    text-decoration: none !important;
+    font-weight: 600;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--color-main);
+    }
+}
+
+.btn-link:hover .btn-icon,
+.btn:hover .btn-icon {
+    transform: translateX(0.25rem);
+}
+
+.btn-icon {
+    transition: 0.3s;
+}
+
+.btn-flex {
+    display: inline-flex;
+    align-items: center;
+    grid-column-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+/**------------ ScrollUp ------------**/
+.scrollup {
+    position: fixed;
+    right: 1.3rem;
+    bottom: 3rem;
+    background-color: var(--color-main);
+    padding: 0.25rem;
+    opacity: 0.8;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+    display: none;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.scrollup-icon {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/**---------- Scroll Bar ---------**/
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: hsl(0, 0%, 74%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 17%);
+}

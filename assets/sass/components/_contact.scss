@@ -1,0 +1,70 @@
+/**---------- Contact ----------**/
+.contact-info {
+    display: grid;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.contact-card {
+    padding: 1.5rem 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow: 0 0 18px #0000001a;
+
+    h3 {
+        font-size: var(--font-normal);
+        font-weight: 600;
+        color: var(--color-dark);
+    }
+
+    span {
+        font-size: var(--font-small);
+        display: block;
+        color: var(--color-text);
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+        color: var(--color-main);
+        margin-bottom: 0.25rem;
+    }
+}
+
+.contact-form {
+    padding-top: 1rem;
+}
+
+.form-contact {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 4rem;
+}
+
+.contact-label {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: var(--font-small);
+    padding: 0.25rem;
+    background-color: var(--color-body);
+    z-index: 10;
+    color: var(--color-text);
+}
+
+.contact-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color-text-alt);
+    border-radius: 4px;
+    background: none;
+    color: var(--color-text);
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.contact-area {
+    height: 11rem;
+}
